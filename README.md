@@ -1,5 +1,4 @@
-![Java](https://img.shields.io/badge/Java-17-orange)
-<img src="https://img.shields.io/badge/Java-17-orange" height="40">
-# **Email Sending System**
+<img src="https://img.shields.io/badge/Java-17-orange" height="50">
+ #**Email Sending System**
 
 This project is a simple email sending simulation developed in Java, designed to demonstrate object-oriented programming concepts (encapsulation, abstraction, inheritance, polymorphism). The `Kisi`, `EkDosya`, and `EpostaMesaji` classes hold the core email data (sender, recipients, subject, body, priority, attachments), while priority and provider type are defined using `enum`s. The sending process is carried out through the `IEpostaGonderici` interface and the `SoyutEpostaGonderici` abstract class using the **Template Method** pattern: for each email, a unique ID is generated, preparation is performed, the actual sending takes place, and a completion message is printed. `KonsolEpostaGonderici` prints the message with all its details to the console, while `SmtpSimuleEpostaGonderici` produces SMTP-like output. Which sender to use is determined by the user's choice through the `EpostaGondericiFabrikasi` class, which implements the **Factory** pattern. To run the project, simply compile and run the `Main` class and enter option 1 (Console) or 2 (SMTP Simulation) in the console.
